@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "twitter-bot-openai-images"
+version = "0.1.0"
+description = ""
+authors = ["Not Sure <not.sure@example.com>"]
+readme = "README.md"
+packages = [{include = "twitter_bot_openai_images"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+bingimagecreator = "^0.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
