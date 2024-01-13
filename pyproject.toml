@@ -9,6 +9,8 @@ packages = [{include = "twitter_bot_openai_images"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 bingimagecreator = "^0.5.0"
+tweepy = "^4.14.0"
+python-dotenv = "^1.0.0"
 
 
 [build-system]

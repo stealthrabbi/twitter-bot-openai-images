@@ -1,5 +1,7 @@
-# image
 
+image_prompt_list.txt
+
+# image
 *.jpg
 *.jpeg
 *.png 
