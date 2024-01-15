@@ -1,5 +1,7 @@
 
 image_prompt_list.txt
+cookie.txt
+*.zip
 
 # image
 *.jpg

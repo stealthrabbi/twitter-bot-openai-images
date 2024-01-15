@@ -38,7 +38,7 @@ class TwitterBot:
         self.api = tweepy.API(auth)
 
     def post_image_tweet(self, message: str, image_path: str):
-        logger.info(f"creating image twee with text {message}")
+        logger.info(f"creating image tweet with text {message}")
         logger.info(f"uploading image at {image_path}")
         media = self.api.media_upload(image_path)
         tweet = self.client.create_tweet(text=message, media_ids=[media.media_id])
