@@ -16,7 +16,7 @@ def generate_image_bing_brush(prompt: str) -> str:
 
     if os.path.exists(output_path):
         shutil.rmtree(output_path)
-        os.mkdir(output_path)
+    os.mkdir(output_path)
 
     logger.debug(
         f"Using Bing Brush, max wait time: {max_wait_time_seconds} seconds. Prompt: {prompt}"
@@ -46,6 +46,7 @@ def generate_image_bing_image_creator(prompt: str) -> str:
     expected_output_file = os.path.join(output_path, f"{base_file_name}_0.jpeg")
     if os.path.exists(expected_output_file):
         os.remove(expected_output_file)
+    os.mkdir(output_path)
 
     image_gen.save_images(
         links=images, output_dir=output_path, file_name=base_file_name, download_count=1

@@ -43,7 +43,9 @@ def _post_tweet_image_at_path(logger, description, image_file_path):
     logger = logging.getLogger(__name__)
     twitter_bot = TwitterBot()
 
-    description = description + "#aiart #barney"
+    tweet_suffix = os.getenv("TWEET_SUFFIX") or ""
+
+    description = description + tweet_suffix
     logger.info(f"posting AI tweet: {description}")
 
     twitter_bot.post_image_tweet(description, image_file_path)
